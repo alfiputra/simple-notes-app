@@ -17,6 +17,4 @@ class NoteRepository(private val notesDao: NotesDao) {
         notesDao.delete(note)
     }
 
-
-
 }
