@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity(), NoteRVAdapter.NoteCLickInterface,
         addFloatingActionButton = findViewById(R.id.fab_addNote)
         noteRecyclerView.layoutManager = LinearLayoutManager(this)
 
-        val noteRVAdapter = NoteRVAdapter(this, this, this)
+        val noteRVAdapter = NoteRVAdapter(this, this)
         noteRecyclerView.adapter = noteRVAdapter
 
         viewModel = ViewModelProvider(

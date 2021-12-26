@@ -1,7 +1,6 @@
 package id.alfiputra.notesapp
 
 import android.annotation.SuppressLint
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,7 +9,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class NoteRVAdapter(
-    val context: Context,
     private val noteClickInterface: NoteCLickInterface,
     private val noteClickDeleteInterface: NoteClickDeleteInterface
 ) : RecyclerView.Adapter<NoteRVAdapter.ViewHolder>() {
